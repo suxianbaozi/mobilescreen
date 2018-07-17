@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="screenadjust.js"></script>
+    <script>
+        ScreenAdJust.setPsdWidth(1080);
+        ScreenAdJust.addCss('style.css');
+    </script>
+</head>
+<body>
+<div class="box">
+</div>
+<script>
+    //如果需要在js设置某div的宽度
+    var showWidth = ScreenAdJust.getRealPx(100);
+    $('.box').html(showWidth);
+</script>
+</body>
+</html>
