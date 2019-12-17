@@ -31,6 +31,8 @@ var ScreenAdJust = {
         }
     },
     _formatCss:function(content){
+        //var reg = new RegExp("\\/\\*\\{([\\-\\d]+)\\}\\*\\/", "g");
+        var reg = new RegExp("([\\-\\d]+)mm", "g");
         content = content.replace(new RegExp("\\/\\*\\{([\\-\\d]+)\\}\\*\\/", "g"),function(all,v){
             return this.getRealPx(parseInt(v))+'px';
         }.bind(this));
