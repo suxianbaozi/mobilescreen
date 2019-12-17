@@ -47,7 +47,8 @@ var ScreenAdJust = {
         //这里可能产生跨域问题,特别是带cdn的情况,可以采取 设置cross origin 头来解决问题
         
         /*  
-            nginx 配置
+            非跨域不用配置
+            nginx 配置 
             add_header Access-Control-Allow-Origin *;
             add_header Access-Control-Allow-Methods GET,POST,OPTIONS;
         */
