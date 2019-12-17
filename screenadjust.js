@@ -44,7 +44,14 @@ var ScreenAdJust = {
     },
     //跨域的情况,请重写这个方法
     getCssContent:function(css,complete) {
-        //这里可能产生跨域问题,特别是带cdn的情况,可以采取
+        //这里可能产生跨域问题,特别是带cdn的情况,可以采取 设置cross origin 头来解决问题
+        
+        /*  
+            nginx 配置
+            add_header Access-Control-Allow-Origin *;
+            add_header Access-Control-Allow-Methods GET,POST,OPTIONS;
+        */
+        
         $.get(css,function(content){
             complete(content);
         })
