@@ -10,4 +10,11 @@ rpx ？ 小程序才有
 前端移动开发屏幕自动兼容
 
 # 用法
-请查看sample
+1. 引ajust.js
+```html
+
+```
+
+.box {
+    width:
+}
